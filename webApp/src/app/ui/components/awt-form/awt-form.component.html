@@ -1,0 +1,40 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)">
+	<div class="row">
+		<div class="large-6 medium-6 columns" [class.error]="collaborator.invalid && formGroup.dirty">
+			<label for="collaboratorInput">collaborator</label>
+			<input type="text" id="collaboratorInput" placeholder="Collaborator" name="collaborator" [formControl]="formGroup.get('collaborator')">
+		</div>
+		<div class="large-6 medium-6 columns" [class.error]="issue.invalid && formGroup.dirty">
+			<label for="issueInput">issue</label>
+			<input type="text" id="issueInput" placeholder="Issue" name="issue" [formControl]="formGroup.get('issue')">
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-6 medium-6 columns" [class.error]="workdate.invalid && formGroup.dirty">
+			<label for="workdateInput">workdate</label>
+			<input type="text" id="workdateInput" placeholder="WorkDate" name="workdate" [formControl]="formGroup.get('workdate')">
+		</div>
+		<div class="large-6 medium-6 columns">
+			<label for="durationInput">duration</label>
+			<input type="text" id="durationInput" placeholder="Duration" name="duration" [formControl]="formGroup.get('duration')">
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-6 medium-6 columns">
+			<label for="startInput">start</label>
+			<input type="text" id="startInput" placeholder="Start" name="start" [formControl]="formGroup.get('start')">
+		</div>
+		<div class="large-6 medium-6 columns">
+			<label for="endInput">end</label>
+			<input type="text" id="endInput" placeholder="End" name="end" [formControl]="formGroup.get('end')">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="large-12 medium-12 columns"> <label for="descriptionInput">description</label>
+			<textarea id="descriptionInput" rows="2" placeholder="Description" name="description" [formControl]="formGroup.get('description')"></textarea>
+		</div>
+	</div>
+	<button type="submit" [disabled]="!formGroup.valid || formGroup.pristine " class="button">Einfügen</button>
+</form>
+<div *ngIf="!formGroup.valid && formGroup.dirty" class="callout alert">{{formValidationMessage()}}</div>

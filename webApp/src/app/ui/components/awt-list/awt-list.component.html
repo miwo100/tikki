@@ -1,0 +1,41 @@
+<table class="ui segment celled striped small table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Collaborator</th>
+            <th>Workdate</th>
+            <th>Duration</th>           
+            <th>Start</th>
+            <th>End</th>
+            <th>Issue</th>
+            <th>Description</th>
+            <th>Paid</th>
+            <th>Consolidated</th>
+            <th>Created At</th>
+            <th>Updated At</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let awt of awtlist">        
+        <td>{{awt.id}}</td>
+        <td>{{awt.collaborator}}</td>
+        <td>{{awt.workdate | date:"dd.MM.yyyy"}}</td>
+        <td>{{awt.duration}}</td>
+        <td>{{awt.start | date:"HH:mm"}}</td>
+        <td>{{awt.end | date:"HH:mm"}}</td>
+        <td>{{awt.issue}}</td>
+        <td>{{awt.description}}</td>
+        <td>{{awt.paid}}</td>
+        <td>{{awt.consolidated}}</td>
+        <td>{{awt.created_at | date:"dd.MM.yyyy HH:mm:ss"}}</td>
+        <td>{{awt.updated_at | date:"dd.MM.yyyy HH:mm:ss"}}</td>
+    </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+

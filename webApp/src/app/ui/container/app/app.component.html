@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="large-12 columns">
+        <h1>
+            Hello here is Tikki powered by Angular2 and node express!
+        </h1>
+    </div>
+</div>
+<div class="row">
+    <div class="large-12 columns">
+        <app-awt-form (addAwtRequested)=addAwt($event)></app-awt-form>
+    </div>
+    <div class="large-12 columns">
+        <app-awt-list [awtlist]="awts"></app-awt-list>
+    </div>
+</div>
