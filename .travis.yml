@@ -23,5 +23,5 @@ before_script:
   - npm install
 
 script:
-  - ng build
+  - npm run build
   # - meteor build $HOME/build.tgz
