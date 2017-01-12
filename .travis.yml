@@ -6,6 +6,7 @@ node_js:
   - "7"
  
 before_install:
+  - npm install -g angular-cli
   # - curl https://install.meteor.com | /bin/sh
   # - export PATH="$HOME/.meteor:$PATH"
 
