@@ -29,7 +29,7 @@ in short seperation of concernes:
 - project managers control budgets
 - developers develop
 
-contribute
+###contribute
 
 - clone project locally, npm install locally and run graphqlServer and webApp
 ```
