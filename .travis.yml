@@ -1,0 +1,27 @@
+sudo: false
+ 
+language: node_js
+
+node_js:
+  - "7"
+ 
+before_install:
+  # - curl https://install.meteor.com | /bin/sh
+  # - export PATH="$HOME/.meteor:$PATH"
+
+cache:
+  directories:
+  - graphqlServer/node_modules
+  - webApp/node_modules
+ 
+before_script:
+  - cd graphqlServer
+  # - meteor update --packages-only
+  - npm install
+  - cd ../webApp
+  - npm install
+  - cd ..
+
+script:
+  - ng build
+  # - meteor build $HOME/build.tgz

@@ -31,10 +31,19 @@ in short seperation of concernes:
 
 contribute
 
-
-- install meteor ->  https://www.meteor.com/install
-- install node
-- npm install 
+- clone project locally, npm install locally and run graphqlServer and webApp
+```
+git clone https://github.com/miwo100/tikki.git
+cd tikki
+cd graphqlServer
+npm install
+npm run start
+cd ..
+cd webApp
+npm install
+npm run start
+```
+direct browser to http://localhost:4200 
 
 
 
