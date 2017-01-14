@@ -43,13 +43,13 @@ fi
 
 # install software
 # meteor
-echo "Installing meteor"
-curl -s https://install.meteor.com/ | sh
-if [ $? -eq 0 ]; then
-	echo "meteor installed"
-else
-	echo "Error installing meteor"
-fi
+# echo "Installing meteor"
+# curl -s https://install.meteor.com/ | sh
+#if [ $? -eq 0 ]; then
+#	echo "meteor installed"
+#else
+#	echo "Error installing meteor"
+#fi
 # NVM
 echo "Installing node.js"
 #apt-get -yqq install build-essential libssl-dev > /dev/null
@@ -134,7 +134,8 @@ else
 fi
 
 echo "NPM install tikki"
-runuser -l vagrant -c 'cd /home/vagrant/tikki/src && npm install' > /dev/null
+runuser -l vagrant -c 'cd /home/vagrant/tikki/graphqlServer && npm install && npm run start' > /dev/null
+runuser -l vagrant -c 'cd /home/vagrant/tikki/webApp && npm install && npm run start' > /dev/null
 if [ $? -eq 0 ]; then
 	echo "npm tikki install succeeded"
 else
