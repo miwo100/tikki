@@ -33,3 +33,4 @@ deploy:
   app: tikki
   on:
     repo: miwo100/tikki
+    all_branches: true
