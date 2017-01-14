@@ -30,6 +30,8 @@ Vagrant.configure("2") do |config|
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
   config.vm.network "private_network", type: "dhcp",  use_dhcp_assigned_default_route: true
+  config.vm.hostname = "tikkidev"
+  config.vm.network "forwarded_port", guest: 4200, host: 4200
   # config.ssh.insert_key = false
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
@@ -50,6 +52,7 @@ Vagrant.configure("2") do |config|
 
   #   # Display the VirtualBox GUI when booting the machine
     hv.gui = true
+    hv.memory = 4096
   #
   #   # Customize the amount of memory on the VM:
   #   vb.memory = "1024"

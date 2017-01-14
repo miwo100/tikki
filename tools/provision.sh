@@ -97,6 +97,13 @@ if [ $? -eq 0 ]; then
 else
 	echo "Error installing MySQL"
 fi
+echo "Create database tikki"
+mysql -u root -pcognovo -e 'CREATE DATABASE tikki;'
+if [ $? -eq 0 ]; then
+	echo "tikki database created"
+else
+	echo "Error creating tikki dtabase"
+fi
 #Sublime
 echo "Installing Sublime"
 add-apt-repository ppa:webupd8team/sublime-text-3
@@ -134,8 +141,8 @@ else
 fi
 
 echo "NPM install tikki"
-runuser -l vagrant -c 'cd /home/vagrant/tikki/graphqlServer && npm install && npm run start' > /dev/null
-runuser -l vagrant -c 'cd /home/vagrant/tikki/webApp && npm install && npm run start' > /dev/null
+runuser -l vagrant -c 'cd /home/vagrant/tikki/graphqlServer && npm install' > /dev/null
+runuser -l vagrant -c 'cd /home/vagrant/tikki/webApp && npm install' > /dev/null
 if [ $? -eq 0 ]; then
 	echo "npm tikki install succeeded"
 else
