@@ -25,3 +25,11 @@ before_script:
 script:
   - npm run build
   # - meteor build $HOME/build.tgz
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: NKDMxhlQVFRNPdjxGUEQaQc2xJ9pBv5yeHklsWm4hnUsM+YMke/4rgoUCdq1J6toBDARmV9D9X3VkJ3HG0G8/zjx5U+XWPTnebL3Az3AkfuLNOlhNJT7Q6jl4BLHaPMAdrJ1Drea8lPZfkJ/hWt+zikhgJy2ZOcstnJ1+oET6A3aciD7MKJV65z3db2u12JSpmeWv4YcZm3hK6oJxGjfxlslrmzx7qZiKNtp3hh4UKolVnspYWlM/hU/4UqcJklcs1SPdC9IUpqM62kmiPJ4Wwq/1S0LNmQhcvS7XEh3WZoZU3OB/910BPzX6/BUtgBHBkkNDgNKFtF9shaelGTQznnsH82DxEL0AqdtA5N+sMrEniiAtP/h5aGlW4IIqPULEVflJ+AqwRLFMJoYdNBxhjS4I4EAw9qvQKeJTItyzQRCgA8R58oGWUFAW9leeu6h/DhaLoyS17C9/MZfurIpjlWOIGvsvx2hdaz9zO4d4+1Q5w/2Cql1b3W7DOQ1887YM3tN1CovQyT0P3Rrr2TjShlpvO83iWrj2VRoVRatdmR+NrPet2zA30JtXx2QIc3JJK6+3qv6mlkstCm50S3KWCy4Rss1X0CEVpInhWTp8DCfozBXRyhUEyJBgBL8iUYTQlxMp4fJsB9SY/8WyLjKTP5ZBVY0y5saXfWhBjVKTuQ=
+  app: tikki
+  on:
+    repo: miwo100/tikki
