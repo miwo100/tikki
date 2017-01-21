@@ -2,6 +2,7 @@
   "name": "tikki",
   "description": "Time capturing for startups",
   "version": "0.1.0",
+  "angular-cli": {},
   "engines": {
   	"node": "7.2.1"
   },
