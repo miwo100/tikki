@@ -1,0 +1,12 @@
+{
+  "name": "tikki",
+  "description": "Time capturing for startups",
+  "version": "0.1.0",
+  "engines": {
+  	"node": "7.2.1"
+  },
+  "scripts": {
+	  "start": "cd graphqlServer && npm run start && cd ../webApp && npm run start",
+	  "postinstall": "cd graphqlServer && npm install && cd ../webApp && npm install"
+  }
+}
