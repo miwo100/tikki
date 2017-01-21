@@ -5,15 +5,8 @@
   "engines": {
   	"node": "7.2.1"
   },
-  "dependencies": {
-     "express",
-     "passport",
-     "passport-github2",
-     "body-parser",
-     "graphql-server-express"
-  },	
   "scripts": {
 	  "start": "cd graphqlServer && npm run start && cd ../webApp && npm run start",
-	  "postinstall": "cd graphqlServer && npm install && cd ../webApp && npm install"
+	  "preinstall": "cd graphqlServer && npm install && cd ../webApp && npm install"
   }
 }
