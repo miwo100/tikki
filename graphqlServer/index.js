@@ -13,7 +13,7 @@ var models_1 = require("./api/models");
 var context = {
     models: models_1.models,
     connectors: {
-        mysql: new mysqlConnector_1.MySqlConnector("localhost", "tikki", "root", "cognovo"),
+        mysql: new mysqlConnector_1.MySqlConnector("ENV['DATABASE_URL']", "ENV['DATABASE_NAME']", "ENV['DATABASE_USER']", "ENV['DATABASE_PASS']"),
         github: new githubConnector_1.GithubConnector()
     }
 };

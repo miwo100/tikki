@@ -12,7 +12,7 @@ import { models } from './api/models';
 const context = {
   models: models,
   connectors: {
-    mysql: new MySqlConnector("localhost","tikki","root","cognovo"),
+    mysql: new MySqlConnector("ENV['DATABASE_URL']", "ENV['DATABASE_NAME']", "ENV['DATABASE_USER']", "ENV['DATABASE_PASS']"),
     github: new GithubConnector()
   }
 };
