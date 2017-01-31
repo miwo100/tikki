@@ -1,0 +1,101 @@
+2017-01-31T18:05:06.112761+00:00 app[web.1]:     at Project.config (/app/.heroku/node/lib/node_modules/angular-cli/ember-cli/lib/models/project.js:158:17)
+2017-01-31T18:05:06.112761+00:00 app[web.1]:     at /app/.heroku/node/lib/node_modules/angular-cli/commands/serve.run.js:31:36
+2017-01-31T18:05:06.112762+00:00 app[web.1]:     at process._tickCallback (internal/process/next_tick.js:103:7)
+2017-01-31T18:05:06.131297+00:00 app[web.1]: 
+2017-01-31T18:05:06.139201+00:00 app[web.1]: npm ERR! Linux 3.13.0-105-generic
+2017-01-31T18:05:06.139459+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2017-01-31T18:05:06.139669+00:00 app[web.1]: npm ERR! node v6.9.1
+2017-01-31T18:05:06.139853+00:00 app[web.1]: npm ERR! npm  v3.10.8
+2017-01-31T18:05:06.140052+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2017-01-31T18:05:06.140208+00:00 app[web.1]: npm ERR! tikki-client@0.0.0 start: `npm run copyscssfiles && ng serve --proxy-config proxy.conf.json`
+2017-01-31T18:05:06.140333+00:00 app[web.1]: npm ERR! Exit status 1
+2017-01-31T18:05:06.140483+00:00 app[web.1]: npm ERR! 
+2017-01-31T18:05:06.140612+00:00 app[web.1]: npm ERR! Failed at the tikki-client@0.0.0 start script 'npm run copyscssfiles && ng serve --proxy-config proxy.conf.json'.
+2017-01-31T18:05:06.140745+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2017-01-31T18:05:06.140879+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the tikki-client package,
+2017-01-31T18:05:06.141013+00:00 app[web.1]: npm ERR! not with npm itself.
+2017-01-31T18:05:06.141172+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2017-01-31T18:05:06.141306+00:00 app[web.1]: npm ERR!     npm run copyscssfiles && ng serve --proxy-config proxy.conf.json
+2017-01-31T18:05:06.141440+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2017-01-31T18:05:06.141573+00:00 app[web.1]: npm ERR!     npm bugs tikki-client
+2017-01-31T18:05:06.141712+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2017-01-31T18:05:06.141848+00:00 app[web.1]: npm ERR!     npm owner ls tikki-client
+2017-01-31T18:05:06.141975+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2017-01-31T18:05:06.146111+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2017-01-31T18:05:06.145943+00:00 app[web.1]: 
+2017-01-31T18:05:06.146164+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2017-01-31T18:05:06.228619+00:00 heroku[web.1]: Process exited with status 1
+2017-01-31T18:14:49.860748+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=tikki-dev.herokuapp.com request_id=6ce114d0-7dae-4322-8127-f3bce5ce8cf2 fwd="87.148.134.67" dyno= connect= service= status=503 bytes=
+2017-01-31T18:14:50.184112+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=tikki-dev.herokuapp.com request_id=4ca5ed4d-0f61-45a4-b99b-4018ae0be817 fwd="87.148.134.67" dyno= connect= service= status=503 bytes=
+2017-01-31T18:15:43.418655+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=tikki-dev.herokuapp.com request_id=8fe24430-b069-424b-84b0-6cf806419f32 fwd="87.148.134.67" dyno= connect= service= status=503 bytes=
+2017-01-31T18:15:43.735451+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=tikki-dev.herokuapp.com request_id=f535e55b-ef01-4f3e-8d67-f5dbf6f523fb fwd="87.148.134.67" dyno= connect= service= status=503 bytes=
+2017-01-31T18:17:28.557316+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=tikki-dev.herokuapp.com request_id=6fc50fc2-f262-4fbe-a9fc-4c73cdd55adf fwd="87.148.134.67" dyno= connect= service= status=503 bytes=
+2017-01-31T18:17:28.941762+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=tikki-dev.herokuapp.com request_id=6507ad49-da91-4c31-88b2-5eb9c83263e8 fwd="87.148.134.67" dyno= connect= service= status=503 bytes=
+2017-01-31T18:28:24.283435+00:00 heroku[web.1]: State changed from crashed to starting
+2017-01-31T18:28:31.227274+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-01-31T18:28:34.767549+00:00 app[web.1]: 
+2017-01-31T18:28:34.767567+00:00 app[web.1]: > tikki-client@0.0.0 start /app
+2017-01-31T18:28:34.767568+00:00 app[web.1]: > npm run copyscssfiles && ng serve --proxy-config proxy.conf.json
+2017-01-31T18:28:34.767569+00:00 app[web.1]: 
+2017-01-31T18:28:35.764843+00:00 app[web.1]: 
+2017-01-31T18:28:35.764864+00:00 app[web.1]: > tikki-client@0.0.0 copyscssfiles /app
+2017-01-31T18:28:35.764870+00:00 app[web.1]: > cp src/assets/scss/_settings.scss node_modules/foundation-sites/scss/settings/_settings.scss && cp src/assets/scss/app.scss node_modules/foundation-sites/assets/app.scss
+2017-01-31T18:28:35.764870+00:00 app[web.1]: 
+2017-01-31T18:28:39.926809+00:00 heroku[web.1]: Process exited with status 1
+2017-01-31T18:28:39.942980+00:00 heroku[web.1]: State changed from starting to crashed
+2017-01-31T18:28:39.683631+00:00 app[web.1]: Cannot read property 'input' of null
+2017-01-31T18:28:39.686531+00:00 app[web.1]: TypeError: Cannot read property 'input' of null
+2017-01-31T18:28:39.686535+00:00 app[web.1]:     at ObjectSchemaTreeNode._set (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-tree.js:347:132)
+2017-01-31T18:28:39.686536+00:00 app[web.1]:     at new ObjectSchemaTreeNode (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-tree.js:331:14)
+2017-01-31T18:28:39.686557+00:00 app[web.1]:     at OneOfSchemaTreeNode.NonLeafSchemaTreeNode._createChildProperty (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-tree.js:244:24)
+2017-01-31T18:28:39.686559+00:00 app[web.1]:     at /app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-tree.js:260:26
+2017-01-31T18:28:39.686560+00:00 app[web.1]:     at Array.map (native)
+2017-01-31T18:28:39.686561+00:00 app[web.1]:     at new OneOfSchemaTreeNode (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-tree.js:259:48)
+2017-01-31T18:28:39.686562+00:00 app[web.1]:     at ArraySchemaTreeNode.NonLeafSchemaTreeNode._createChildProperty (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-tree.js:244:24)
+2017-01-31T18:28:39.686562+00:00 app[web.1]:     at ArraySchemaTreeNode._set (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-tree.js:434:39)
+2017-01-31T18:28:39.686563+00:00 app[web.1]:     at new ArraySchemaTreeNode (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-tree.js:414:14)
+2017-01-31T18:28:39.686564+00:00 app[web.1]:     at ObjectSchemaTreeNode.NonLeafSchemaTreeNode._createChildProperty (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-tree.js:244:24)
+2017-01-31T18:28:39.686565+00:00 app[web.1]:     at ObjectSchemaTreeNode._set (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-tree.js:347:47)
+2017-01-31T18:28:39.686565+00:00 app[web.1]:     at new ObjectSchemaTreeNode (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-tree.js:331:14)
+2017-01-31T18:28:39.686566+00:00 app[web.1]:     at ArraySchemaTreeNode.NonLeafSchemaTreeNode._createChildProperty (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-tree.js:244:24)
+2017-01-31T18:28:39.686567+00:00 app[web.1]:     at ArraySchemaTreeNode._set (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-tree.js:434:39)
+2017-01-31T18:28:39.686567+00:00 app[web.1]:     at new ArraySchemaTreeNode (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-tree.js:414:14)
+2017-01-31T18:28:39.686568+00:00 app[web.1]:     at RootSchemaTreeNode.NonLeafSchemaTreeNode._createChildProperty (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-tree.js:244:24)
+2017-01-31T18:28:39.686569+00:00 app[web.1]:     at RootSchemaTreeNode.ObjectSchemaTreeNode._set (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-tree.js:347:47)
+2017-01-31T18:28:39.686570+00:00 app[web.1]:     at RootSchemaTreeNode.ObjectSchemaTreeNode [as constructor] (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-tree.js:331:14)
+2017-01-31T18:28:39.686571+00:00 app[web.1]:     at new RootSchemaTreeNode (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-tree.js:478:16)
+2017-01-31T18:28:39.686571+00:00 app[web.1]:     at GeneratedSchemaClass.SchemaClassBase (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-class-factory.js:66:29)
+2017-01-31T18:28:39.686573+00:00 app[web.1]:     at new GeneratedSchemaClass (/app/.heroku/node/lib/node_modules/angular-cli/node_modules/@ngtools/json-schema/src/schema-class-factory.js:165:20)
+2017-01-31T18:28:39.686574+00:00 app[web.1]:     at new CliConfig (/app/.heroku/node/lib/node_modules/angular-cli/models/config/config.js:24:24)
+2017-01-31T18:28:39.686575+00:00 app[web.1]:     at Function.CliConfig.fromConfigPath (/app/.heroku/node/lib/node_modules/angular-cli/models/config/config.js:99:16)
+2017-01-31T18:28:39.686575+00:00 app[web.1]:     at Function.CliConfig.fromProject (/app/.heroku/node/lib/node_modules/angular-cli/models/config.js:63:44)
+2017-01-31T18:28:39.686577+00:00 app[web.1]:     at /app/.heroku/node/lib/node_modules/angular-cli/ember-cli/lib/models/project.js:178:27
+2017-01-31T18:28:39.686576+00:00 app[web.1]:     at Class.config (/app/.heroku/node/lib/node_modules/angular-cli/addon/index.js:11:77)
+2017-01-31T18:28:39.686578+00:00 app[web.1]:     at Array.reduce (native)
+2017-01-31T18:28:39.686578+00:00 app[web.1]:     at Project.getAddonsConfig (/app/.heroku/node/lib/node_modules/angular-cli/ember-cli/lib/models/project.js:176:22)
+2017-01-31T18:28:39.686579+00:00 app[web.1]:     at Project.config (/app/.heroku/node/lib/node_modules/angular-cli/ember-cli/lib/models/project.js:158:17)
+2017-01-31T18:28:39.686580+00:00 app[web.1]:     at /app/.heroku/node/lib/node_modules/angular-cli/commands/serve.run.js:31:36
+2017-01-31T18:28:39.686581+00:00 app[web.1]:     at process._tickCallback (internal/process/next_tick.js:103:7)
+2017-01-31T18:28:39.740946+00:00 app[web.1]: 
+2017-01-31T18:28:39.757682+00:00 app[web.1]: npm ERR! Linux 3.13.0-105-generic
+2017-01-31T18:28:39.758097+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2017-01-31T18:28:39.758458+00:00 app[web.1]: npm ERR! node v6.9.1
+2017-01-31T18:28:39.758785+00:00 app[web.1]: npm ERR! npm  v3.10.8
+2017-01-31T18:28:39.759128+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2017-01-31T18:28:39.759460+00:00 app[web.1]: npm ERR! tikki-client@0.0.0 start: `npm run copyscssfiles && ng serve --proxy-config proxy.conf.json`
+2017-01-31T18:28:39.759676+00:00 app[web.1]: npm ERR! Exit status 1
+2017-01-31T18:28:39.759962+00:00 app[web.1]: npm ERR! 
+2017-01-31T18:28:39.760509+00:00 app[web.1]: npm ERR! Failed at the tikki-client@0.0.0 start script 'npm run copyscssfiles && ng serve --proxy-config proxy.conf.json'.
+2017-01-31T18:28:39.760721+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2017-01-31T18:28:39.760962+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the tikki-client package,
+2017-01-31T18:28:39.761307+00:00 app[web.1]: npm ERR! not with npm itself.
+2017-01-31T18:28:39.761547+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2017-01-31T18:28:39.761815+00:00 app[web.1]: npm ERR!     npm run copyscssfiles && ng serve --proxy-config proxy.conf.json
+2017-01-31T18:28:39.762030+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2017-01-31T18:28:39.762224+00:00 app[web.1]: npm ERR!     npm bugs tikki-client
+2017-01-31T18:28:39.762450+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2017-01-31T18:28:39.762692+00:00 app[web.1]: npm ERR!     npm owner ls tikki-client
+2017-01-31T18:28:39.762908+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2017-01-31T18:28:39.798530+00:00 app[web.1]: 
+2017-01-31T18:28:39.799772+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2017-01-31T18:28:39.799979+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
