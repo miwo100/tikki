@@ -9,7 +9,6 @@
   },
   "scripts": {
 	  "start": "cd graphqlServer && npm run start && cd ../webApp && npm run start",
-	  "heroku-prebuild": "npm install -g angular-cli",
 	  "preinstall": "echo 'Installing dependencies...' && cd graphqlServer && npm install && cd ../webApp && npm install"
   }
 }
