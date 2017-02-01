@@ -4,10 +4,11 @@
   "version": "0.1.0",
   "angular-cli": {},
   "engines": {
-  	"node": "7.2.1"
+  	"node": "7.2.1",
+	"npm": "4.0.5"
   },
   "scripts": {
 	  "start": "cd graphqlServer && npm run start && cd ../webApp && npm run start",
-	  "preinstall": "cd graphqlServer && npm install && cd ../webApp && npm install"
+	  "preinstall": "echo 'Installing dependencies...' && cd graphqlServer && npm install && cd ../webApp && npm install"
   }
 }
