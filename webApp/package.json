@@ -10,7 +10,8 @@
         "test": "ng test",
         "pree2e": "webdriver-manager update",
         "e2e": "protractor",
-        "heroku-prebuild": "npm install -g angular-cli",
+        "heroku-preinstall": "npm install -g angular-cli",
+        "heroku-postinstall": "npm run build",
         "copyscssfiles": "cp src/assets/scss/_settings.scss node_modules/foundation-sites/scss/settings/_settings.scss && cp src/assets/scss/app.scss node_modules/foundation-sites/assets/app.scss"
     },
     "private": true,
