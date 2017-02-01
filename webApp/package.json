@@ -5,7 +5,6 @@
     "angular-cli": {},
     "scripts": {
     	"start": "ng --version",
-        //"start": "npm run copyscssfiles && ng serve --proxy-config proxy.conf.json",
         "build": "npm run copyscssfiles && ng build",
         "lint": "tslint \"src/**/*.ts\"",
         "test": "ng test",
