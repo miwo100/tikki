@@ -1,6 +1,10 @@
 {
-   "/graphql": {
-      "target": "http://localhost:3000/graphql",
-      "secure": false
-   }
+    "/graphql": {
+        "target": "http://localhost:3000/",
+        "secure": false
+    },
+    "/auth": {
+        "target": "http://localhost:3001/",
+        "secure": false
+    }
 }

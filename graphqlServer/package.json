@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./index",
-    "debug": "node --debug ./index"
+    "start": "NODE_ENV=dev node ./bin/www",
+    "debug": "NODE_ENV=dev node --debug ./bin/www",
+    "debugautobreak": "NODE_ENV=dev node --debug-brk ./bin/www"
   },
   "dependencies": {
+    "@types/config": "0.0.31",
     "@types/node": "^6.0.52",
     "@types/sequelize": "^4.0.39",
     "apollo-client": "^0.5.24",
@@ -14,6 +16,7 @@
     "config": "^1.24.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
+    "ejs": "^2.5.5",
     "express": "~4.14.0",
     "graphql": "^0.7.2",
     "graphql-server-express": "^0.4.3",

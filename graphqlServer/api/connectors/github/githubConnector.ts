@@ -1,6 +1,6 @@
 import * as config from 'config';
 
-const ACCESS_TOKEN: string = config.get('GITHUB_ACCESS_TOKEN')
+const ACCESS_TOKEN: string = config.get<string>('GITHUB_ACCESS_TOKEN');
 
 import { default as ApolloClient, createNetworkInterface } from "apollo-client";
 import { default as gql } from "graphql-tag";

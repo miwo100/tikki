@@ -8,10 +8,12 @@ let devtools: StoreEnhancer<AppState> =
   window['devToolsExtension'] ?
   window['devToolsExtension']() : f => f;
 
-export let store: Store<AppState> = createStore<AppState>(
+let store: Store<AppState> = createStore<AppState>(
   reducer,
   compose(devtools)
 );
+
+export function storeFactory(){ return store };
 
 
 

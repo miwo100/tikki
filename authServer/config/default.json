@@ -1,0 +1,9 @@
+{
+    "dbConfig": {
+        "server": "localhost",
+        "database": "tikki",
+        "username": "root",
+        "password": "cognovo"
+    },
+    "GITHUB_ACCESS_TOKEN": "<replace with github access token>"
+}
