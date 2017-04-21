@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  #config.vm.box = "kmm/ubuntu-xenial64" # this is the only Ubuntu 16.04 box available
+  #config.vm.box = "ubuntu/xenial64" # this is the only Ubuntu 16.04 box available
   config.vm.box = "kaorimatz/ubuntu-16.04-amd64" #14.0.4
 
   config.vm.boot_timeout = 600
