@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Route } from "@angular/router";
 import { AuthenticationService } from "../services/authentication.service";
-import { User } from "../models/User";
+import { User } from "../models/user";
 
 const LOGIN_MESSAGE: string = "Connect to Github";
 const LOGOUT_MESSAGE: string = "Logout";

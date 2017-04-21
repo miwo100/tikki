@@ -80,5 +80,5 @@ Vagrant.configure("2") do |config|
   #config.vm.provision "shell", path:"./tools/always.sh", run: "always"
 
   config.vm.synced_folder ".", "/vagrant", disabled: true #disable default sharing of project dir
-  config.vm.synced_folder "C:\\VMShare", "/VMShare", owner: "vagrant", group: "vagrant"
+  #config.vm.synced_folder "C:\\VMShare", "/VMShare", owner: "vagrant", group: "vagrant"
 end

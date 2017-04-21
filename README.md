@@ -4,13 +4,13 @@
 
 Easy solution for integrating time capturing into your github workflow
 
-###Our Challenge:
+### Our Challenge:
 We have been tired of 
 - tracking our working hours in excel sheets
 - consolidating all sheets for billing
 - using oversized project management solutions or too simple time trackers
 
-###what we want
+### what we want
 - deep github integration
 - order based budget controlling
 - role based dashboards
@@ -18,7 +18,7 @@ We have been tired of
 - smart tool which makes time tracking fun and easy for everyone of the team
 
 
-###what we not want
+### what we not want
 - "developer controlling"
 - "stop watches"
 - billing
@@ -29,7 +29,7 @@ in short seperation of concernes:
 - project managers control budgets
 - developers develop
 
-###contribute
+### contribute
 
 - clone project locally, npm install locally and run graphqlServer and webApp
 ```
@@ -44,6 +44,25 @@ npm install
 npm run start
 ```
 direct browser to http://localhost:4200 
+
+#### git settings
+if you like to work with git from the command line please use these settings:
+
+- your identity
+``` bash
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
+- only push current branch
+```bash
+git config --global push.default simple
+```
+
+- cache credentials
+```
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'
+```
 
 
 

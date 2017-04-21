@@ -126,11 +126,11 @@ fi
 # create tikki desktop icon
 #chown -R cognovo:cognovo /tikki
 # Tikki desktop icon
-echo "Creating VMShare desktop icon"
-if [ ! -d /home/vagrant/Desktop/VMShare ]; then
-	runuser -l vagrant -c 'mkdir /home/vagrant/Desktop'
-	ln -s /VMShare /home/vagrant/Desktop/VMShare
-fi
+#echo "Creating VMShare desktop icon"
+#if [ ! -d /home/vagrant/Desktop/VMShare ]; then
+#	runuser -l vagrant -c 'mkdir /home/vagrant/Desktop'
+#	ln -s /VMShare /home/vagrant/Desktop/VMShare
+#fi
 
 echo "Cloning tikki project"
 runuser -l vagrant -c 'git clone https://github.com/miwo100/tikki.git /home/vagrant/tikki' > /dev/null
@@ -140,14 +140,14 @@ else
 	echo "Error cloning tikki"
 fi
 
-echo "NPM install tikki"
-runuser -l vagrant -c 'cd /home/vagrant/tikki/graphqlServer && npm install' > /dev/null
-runuser -l vagrant -c 'cd /home/vagrant/tikki/webApp && npm install' > /dev/null
-if [ $? -eq 0 ]; then
-	echo "npm tikki install succeeded"
-else
-	echo "npm tikki install failed"
-fi
+# echo "NPM install tikki"
+# runuser -l vagrant -c 'cd /home/vagrant/tikki/graphqlServer && npm install' > /dev/null
+# runuser -l vagrant -c 'cd /home/vagrant/tikki/webApp && npm install' > /dev/null
+# if [ $? -eq 0 ]; then
+# 	echo "npm tikki install succeeded"
+# else
+# 	echo "npm tikki install failed"
+# fi
 
 # Xserver setup
 #echo "Setting up Xserver"
@@ -167,6 +167,49 @@ fi
 #	echo "Error upgrading Ubuntu"
 #fi
 #apt-get -f install --reinstall xfce4-panel
+
+#docker
+echo "Installing Docker"
+#
+#
+#
+#installation steps according to https://docs.docker.com/engine/installation/linux/ubuntu/#install-using-the-repository
+#
+#SET UP THE REPOSITORY
+#
+#1. Install packages to allow apt to use a repository over HTTPS
+sudo apt-get -y install apt-transport-https ca-certificates curl software-properties-common
+#2. Add Docker’s official GPG key
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+#3. Use the following command to set up the stable repository
+#amd64
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+#
+#INSTALL DOCKER
+#
+#1. Update the apt package index.
+sudo apt-get -y update
+#2. Install the latest version of Docker, or go to the next step to install a specific version. Any existing installation of Docker is replaced.
+sudo apt-get -y install docker-ce
+#
+#
+#
+#post-installation steps according to https://docs.docker.com/engine/installation/linux/linux-postinstall/#configure-docker-to-start-on-boot
+#
+#Manage Docker as a non-root user
+#
+#1. Create the docker group.
+sudo groupadd docker
+#2. Add your user to the docker group.
+sudo usermod -aG docker vagrant
+#3. Log out and log back in so that your group membership is re-evaluated.
+#4. Verify that you can run docker commands without sudo
+#
+#Configure Docker to start on boot
+#
+#systemd
+sudo systemctl enable docker
 
 echo "XKBMODEL=\"pc105\"
 XKBLAYOUT=\"de\"
