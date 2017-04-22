@@ -140,8 +140,8 @@ export class GithubConnector {
               }).then(
               ({loading, data}) => {
               if(!loading){
-                let repos: any = data.repositoryOwner.repositories.edges.map((val) => val.node);
-                console.log(data.repositoryOwner.repositories.edges.map((val) => val.node.name)); 
+                let repos: any = (<any>data).repositoryOwner.repositories.edges.map((val) => val.node);
+                console.log((<any>data).repositoryOwner.repositories.edges.map((val) => val.node.name)); 
                 resolve(repos);
               }
             },(reason) => {
@@ -166,7 +166,7 @@ export class GithubConnector {
             if(!loading){
               //let repos: any = data.repositoryOwner.repositories.edges.map((val) => val.node);
               console.log(data); 
-              resolve( data.node );
+              resolve( (<any>data).node );
             }
           },(reason) => {
             console.log("hello from rejected"+  reason);               
@@ -191,7 +191,7 @@ export class GithubConnector {
               }).then(
               ({loading, data}) => {
               if(!loading){
-                let issues: any = data.node.issues.edges.map((val) => val.node);
+                let issues: any = (<any>data).node.issues.edges.map((val) => val.node);
                 resolve(issues);
               }
             },(reason) => {
