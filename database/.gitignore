@@ -1,1 +1,8 @@
 node_modules/*
+.bash_history
+migrations/*.js
+migrations/*.js.map
+seeders/development/*.js
+seeders/development/*.js.map
+src/*.js
+src/*.js.map
