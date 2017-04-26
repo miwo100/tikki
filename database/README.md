@@ -31,7 +31,9 @@ npm run sequelize migration:create
 ```
 this creates a new migration file in folder migrations:
 
-```migrations/20170426134225-unnamed-migration.js```
+```bash
+migrations/20170426134225-unnamed-migration.js
+```
 
 rename it to something like 
 
@@ -41,7 +43,7 @@ migrations/20170426134225-create-table-newtable.ts
 
 __pay attention to change the suffix from .js to .ts__
 
-Two different types of migrations can be implemented
+Two different types of migrations can be implemented: SQL Script and Typescript migrations.
 
 #### SQL script migration
 For this tpye of migration you have manually to add two files in the migration/sql folder for the up and down logic.
