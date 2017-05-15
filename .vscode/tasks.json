@@ -1,0 +1,33 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "command": "bash",
+    "problemMatcher": "$tsc",
+    "args": ["-c"],
+    "tasks": [{
+        "taskName": "build authServer",
+        "args": ["tsc", "-p", "./authServer"],
+        "isBuildCommand": true,
+        "suppressTaskName": true,
+        "showOutput": "silent"
+    }, {
+        "taskName": "build database",
+        "args": ["tsc", "-p", "./database"],
+        "isBuildCommand": true,
+        "suppressTaskName": true,
+        "showOutput": "silent"
+    }, {
+        "taskName": "build graphqlServer",
+        "args": ["tsc", "-p", "./graphqlServer"],
+        "isBuildCommand": true,
+        "suppressTaskName": true,
+        "showOutput": "silent"
+    }, {
+        "taskName": "build authServer, database and graphqlServer",
+        "args": ["tsc -p ./authServer && tsc -p ./database && tsc -p ./graphqlServer"],
+        "isBuildCommand": true,
+        "suppressTaskName": true,
+        "showOutput": "silent"
+    }]
+}
