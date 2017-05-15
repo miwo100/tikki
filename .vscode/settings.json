@@ -6,5 +6,16 @@
         "**/.DS_Store": true,
         "**/*.js": { "when": "$(basename).ts" },
         "**/*.js.map": true
-    }
+    },
+    "workbench.activityBar.visible": true,
+    "editor.lineNumbers": "relative",
+    "eslint.options": {
+        "eslint.options": {
+            "configFile": "./.eslintrc.json"
+        }
+    },
+    "workbench.welcome.enabled": true,
+    "typescript.referencesCodeLens.enabled": true,
+    "editor.minimap.enabled": true,
+    "editor.dragAndDrop": true
 }
